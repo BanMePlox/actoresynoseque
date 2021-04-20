@@ -1,0 +1,71 @@
+package ej102;
+import java.util.*;
+public class principal {
+
+	public static void main(String[] args) {
+		int menu=0;
+		ArrayList<persona> personas2 = new ArrayList<persona>();
+		ArrayList<pelicula> pelis = new ArrayList<pelicula>();
+		Scanner sc = new Scanner(System.in);
+		while (menu!=6) {
+			menu=0;
+		System.out.println("--VIDEO CLUB BE KIND -- REWIND!");
+		System.out.println("1- Dar de alta un director");
+		System.out.println("2- Dar de alta un Actor");
+		System.out.println("3- Dar de alta un productor");
+		System.out.println("4- Dar de alta una pelicula");
+		System.out.println("5- Listado de peliculas");
+		System.out.println("6- Salir");
+		
+		if (menu==1) {
+			
+		}
+
+		if (menu==2) {
+			
+		}
+
+		if (menu==3) {
+			
+		}
+		
+		if (menu==4) {
+			
+		}
+		
+		if (menu==5) {
+			
+		}
+		
+		if (menu==6) {
+			break;
+		}
+		
+		if (menu>6) {
+			System.out.println("Opción incorrecta!");
+		}
+		if (menu<1) {
+			System.out.println("Opción incorrecta!");
+		}
+		
+
+	}  
+	}
+	
+	public static void directorcito (String tipo, ArrayList<persona> personas2) {
+		String nombre=null;
+		int edad=0;
+		int oscars=0;
+		int num=0;
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Introduzca el nombre del director");
+		nombre = sc.nextLine();
+		System.out.println("Introduzca edad");
+		edad = sc.nextInt();
+		System.out.println("Introduzca cuantos oscars tiene");
+		oscars = sc.nextInt();
+		
+		
+		
+	}
+}
