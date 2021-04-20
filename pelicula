@@ -1,0 +1,31 @@
+package ej102;
+import java.util.*;
+public class pelicula {
+	private String titulo;
+	private persona Director;
+	private persona Actor;
+	private persona Productor;
+	private ArrayList<persona> actores = new ArrayList<persona>();
+	static int numeropeliculas=0;
+	
+	public pelicula (String titulo, persona Director, persona Actor, persona Productor, ArrayList<persona> actores) {
+		this.titulo=titulo;
+		this.Director=Director;
+		this.Actor=Actor;
+		this.Productor=Productor;
+		this.actores=actores;
+		numeropeliculas++;
+	}
+	
+	public void resumen () {
+		int numoscars=0;
+		System.out.println("--");
+		System.out.println("+"+titulo+", dirigida por: "+ Director.getNombre()+ " producida por: "+ Productor.getNombre()+ "e interpretada por: ");
+		Iterator iter = actores.iterator();
+		while (iter.hasNext()) {
+			System.out.println("-"+iter.next());
+			System.out.println("Entre todos, tienen nun total de "+ numoscars+ " oscars!");
+		}
+	}
+	
+}
